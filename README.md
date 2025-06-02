@@ -53,13 +53,16 @@ This project demonstrates structured data cleaning and preprocessing using the N
 import pandas as pd
 
 **Load the raw dataset**
+
 df = pd.read_csv("netflix_titles.csv")
 print("Initial Shape:", df.shape)
 
 **Display missing values**
+
 print(df.isnull().sum())
 
 **Fill missing values with meaningful defaults**
+
 df['director'] = df['director'].fillna('Unknown')
 df['cast'] = df['cast'].fillna('Not Available')
 df['country'] = df['country'].fillna('Unknown')
@@ -67,18 +70,23 @@ df['rating'] = df['rating'].fillna('Not Rated')
 df['duration'] = df['duration'].fillna('Unknown')
 
 **Convert date_added to datetime**
+
 df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
 
 **Remove duplicates**
+
 df.drop_duplicates(inplace=True)
 
 **Standardize column names to snake_case**
+
 df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
 
 **Display final shape**
+
 print("Cleaned Shape:", df.shape)
 
 **Save cleaned dataset**
+
 df.to_csv("cleaned_netflix_dataset.csv", index=False)
 
 
