@@ -120,7 +120,9 @@ The cleaned dataset will be saved as `cleaned_netflix_dataset.csv`.
 ## Contact
 
 For questions, collaborations, or feedback, please reach out through GitHub, Email or LinkedIn.
+
 Email-10221shubham.s@gmail.com
+
 Linkedin-www.linkedin.com/in/shubham-s-14ba6a283
 
 ---
