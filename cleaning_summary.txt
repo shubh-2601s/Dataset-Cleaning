@@ -1,0 +1,29 @@
+Initial Shape: (8807, 12)
+Initial Missing Values:
+show_id            0
+type               0
+title              0
+director        2634
+cast             825
+country          831
+date_added        10
+release_year       0
+rating             4
+duration           3
+listed_in          0
+description        0
+
+Cleaned Shape: (8807, 12)
+Remaining Missing Values:
+show_id          0
+type             0
+title            0
+director         0
+cast             0
+country          0
+date_added      98
+release_year     0
+rating           0
+duration         0
+listed_in        0
+description      0
